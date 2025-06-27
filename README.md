@@ -10,12 +10,6 @@ Aplicación CRM para gestión de clientes, compañías e interacciones con gener
 
 ## Instalación
 
-1. Clonar repositorio:
-
-```bash
-git clone https://github.com/tu-usuario/test.git
-```
-
 ```bash
 python -m venv venv
 source venv/bin/activate # Linux/Mac
@@ -24,7 +18,12 @@ pip install -r requirements.txt
 ```
 
 ```bash
+python manage.py makemigrations app
 python manage.py migrate
 python manage.py populate_data
 python manage.py runserver
 ```
+
+# Vista
+
+En el navegador acceder a http://localhost:8000/customers/
